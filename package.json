@@ -26,9 +26,15 @@
     "help": "nx help"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@mikro-orm/core": "^4.3.4",
+    "@mikro-orm/nestjs": "^4.2.0",
+    "@mikro-orm/postgresql": "^4.3.4"
+  },
   "devDependencies": {
+    "@mikro-orm/cli": "^4.3.4",
     "@nrwl/cli": "11.0.13",
+    "@nrwl/nest": "^11.0.13",
     "@nrwl/tao": "11.0.13",
     "@nrwl/workspace": "11.0.13",
     "@types/node": "14.14.14",
