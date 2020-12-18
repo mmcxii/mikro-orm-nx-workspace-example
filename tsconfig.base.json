@@ -17,6 +17,9 @@
     "paths": {
       "@mikro-orm-nx-workspace-example/database/entities": [
         "libs/database/entities/src/index.ts"
+      ],
+      "@mikro-orm-nx-workspace-example/server/orm": [
+        "libs/server/orm/src/index.ts"
       ]
     }
   },

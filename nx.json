@@ -25,6 +25,12 @@
   "projects": {
     "database-entities": {
       "tags": []
+    },
+    "server-orm": {
+      "tags": []
+    },
+    "server-api": {
+      "tags": []
     }
   }
 }

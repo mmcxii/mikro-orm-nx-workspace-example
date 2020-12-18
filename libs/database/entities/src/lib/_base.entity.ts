@@ -1,4 +1,4 @@
-import { Entity, PrimaryKey, Property } from "@mikro-orm/core";
+import { Entity, PrimaryKey } from "@mikro-orm/core";
 
 @Entity({
   abstract: true,
@@ -6,10 +6,4 @@ import { Entity, PrimaryKey, Property } from "@mikro-orm/core";
 export abstract class BaseEntity {
   @PrimaryKey()
   id!: number;
-
-  @Property()
-  createdAt = new Date();
-
-  @Property({ onUpdate: () => new Date() })
-  updatedAt = new Date();
 }

@@ -6,6 +6,6 @@
 
 3. Create database schema via `mikro-orm schema:create --run`. This will also create the database if it does not exist
 
-4. Run using `nx serve api`
+4. Run using `nx serve server-api`
 
-5. API will be available at http://localhost:3333
+5. API will be available at http://localhost:3333/api
