@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mikro-orm-nx-workspace-example/database/entities": [
+        "libs/database/entities/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

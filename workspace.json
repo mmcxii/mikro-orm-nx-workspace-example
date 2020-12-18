@@ -1,7 +1,32 @@
 {
   "version": 2,
-
-  "projects": {},
+  "projects": {
+    "database-entities": {
+      "root": "libs/database/entities",
+      "sourceRoot": "libs/database/entities/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/database/entities/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/database/entities"
+          ],
+          "options": {
+            "jestConfig": "libs/database/entities/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
   }
